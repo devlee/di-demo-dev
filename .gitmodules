@@ -1,0 +1,6 @@
+[submodule "di-demo-web"]
+	path = di-demo-web
+	url = https://github.com/devlee/di-demo-web.git
+[submodule "di-demo-api"]
+	path = di-demo-api
+	url = https://github.com/devlee/di-demo-api.git
