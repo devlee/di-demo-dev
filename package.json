@@ -8,7 +8,7 @@
     "initsub": "git submodule init && git submodule update",
     "initgit": "git submodule foreach git checkout master && git submodule foreach git pull",
     "initnpm": "git submodule foreach npm install",
-    "initenv": "npm initsub && npm initgit && npm initnpm"
+    "initenv": "npm run initsub && npm run initgit && npm run initnpm"
   },
   "repository": {
     "type": "git",
