@@ -1,13 +1,17 @@
 version: '2'
 services:
   api:
-    build: ./di-demo-api/
+    image: node
+    volumes:
+      - ./di-demo-api/:/home/git/di-demo-api/
     working_dir: /home/git/di-demo-api/
     command: npm start
     ports:
       - "6688:6688"
   web:
-    build: ./di-demo-web/
+    image: node
+    volumes:
+      - ./di-demo-web/:/home/git/di-demo-web/
     working_dir: /home/git/di-demo-web/
     command: npm start
     ports:
