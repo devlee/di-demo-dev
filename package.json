@@ -1,0 +1,23 @@
+{
+  "name": "di-demo-dev",
+  "version": "1.0.0",
+  "description": "docker image demo dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "initsub": "git submodule init && git submodule update",
+    "initgit": "git submodule foreach git checkout master && git submodule foreach git pull",
+    "initnpm": "git submodule foreach npm install",
+    "init": "npm initsub && npm initgit && npm initnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlee/di-demo-dev.git"
+  },
+  "author": "devlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devlee/di-demo-dev/issues"
+  },
+  "homepage": "https://github.com/devlee/di-demo-dev#readme"
+}
